@@ -1,5 +1,6 @@
 .vscode
 hello
+bool
 
 # Prerequisites
 *.d
