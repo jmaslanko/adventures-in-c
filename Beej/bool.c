@@ -4,13 +4,9 @@
 int main(void) {
     bool x = false;
     int y = 0;
-    int z = 0;
+    int z;
 
-    z += y > 5? 10: 3;
-
-    if (y) {
-        printf("y is true!\n");
+    for (z=0; z<10; z++) {
+        printf("The value is: %d\n", z);
     }
-
-    printf("The number %d is %s\n", z, z % 2==0? "even": "odd");
 }
