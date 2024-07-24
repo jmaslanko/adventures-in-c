@@ -4,9 +4,10 @@
 int main(void) {
     bool x = false;
     int y = 0;
-    int z;
+    int i;
+    int j;
 
-    for (z=0; z<10; z++) {
-        printf("The value is: %d\n", z);
+    for (i = 0, j = 5; i < 5; i++, j++) {
+        printf("i: %d, j: %d\n", i, j);
     }
 }
