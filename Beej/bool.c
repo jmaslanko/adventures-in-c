@@ -3,11 +3,7 @@
 
 int main(void) {
     bool x = false;
-    int y = 0;
-    int i;
-    int j;
+    int a = 999;
 
-    for (i = 0, j = 5; i < 5; i++, j++) {
-        printf("i: %d, j: %d\n", i, j);
-    }
+    printf("%zu\n", sizeof (char));
 }
