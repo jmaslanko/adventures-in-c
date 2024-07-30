@@ -3,11 +3,19 @@
 #include <stdlib.h>
 
 int main(void) {
-    bool x = false;
-    int r;
+    int x = 1;
 
-    for (r = 0; r < 10; r+3) {
-        printf("%d\n", r);
+    switch (x) { 
+        case 1:
+            printf("1\n");
+            // Fall through!
+        case 2: 
+            printf("2\n");
+            printf("Another\n");
+            break; 
+        case 3:
+            printf("3\n");
+            break;
     }
 
 }
