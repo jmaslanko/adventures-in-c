@@ -3,19 +3,12 @@
 #include <stdlib.h>
 
 int main(void) {
-    int x = 1;
+    double d = 81283501;
+    double r = 74223975;
+    double total = d + r;
 
-    switch (x) { 
-        case 1:
-            printf("1\n");
-            // Fall through!
-        case 2: 
-            printf("2\n");
-            printf("Another\n");
-            break; 
-        case 3:
-            printf("3\n");
-            break;
-    }
+    double d_per = d/total;
+    printf("Democrat percent: %lf\n", d_per);
+
 
 }
