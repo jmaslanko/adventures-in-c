@@ -1,12 +1,11 @@
 #include <stdio.h>
 
-int plus_one(int n) {
-    return n + 1;
+void increment(int a){
+    a++;
 }
 
 int main(void) {
-    int i=10, j;
-    j = plus_one(i);
-
-    printf("i + 1 is %d\n", j);
+    int i = 10;
+    increment(i);
+    printf("i == %d\n", i);
 }
