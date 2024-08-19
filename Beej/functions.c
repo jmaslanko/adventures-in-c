@@ -1,11 +1,15 @@
 #include <stdio.h>
 
-void increment(int a){
-    a++;
-}
+int foo(void);
 
 int main(void) {
-    int i = 10;
-    increment(i);
-    printf("i == %d\n", i);
+    int i;
+
+    i = foo();
+
+    printf("i == %d\n",i);
+}
+
+int foo(void){
+    return 3490;
 }
