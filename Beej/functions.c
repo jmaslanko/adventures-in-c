@@ -1,15 +1,7 @@
 #include <stdio.h>
 
-int foo(void);
-
 int main(void) {
-    int i;
-
-    i = foo();
-
-    printf("i == %d\n",i);
-}
-
-int foo(void){
-    return 3490;
+    int i = 10;
+    printf("The value of i is %d\n", i);
+    printf("And its address is %p\n", (void *)&i);
 }
