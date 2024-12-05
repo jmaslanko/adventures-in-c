@@ -2,6 +2,7 @@
 hello
 bool
 func
+power
 
 # Prerequisites
 *.d

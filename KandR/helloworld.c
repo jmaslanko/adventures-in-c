@@ -1,25 +1,30 @@
 #include <stdio.h>
 
-#define IN 1
-#define OUT 0
-
 int main() {
-    int c, nl, nw, nc, state;
+    int c, i, nwhite, nother;
+    int apple[10];
 
-    state = OUT;
-    nl = nw = nc = 0;
-    while ((c=getchar()) != EOF) {
-        ++nc;
-        if (c =='\n') {
-            ++nl;
+    nwhite = nother = 0;
+
+    for (i = 0; i < 10; ++i) {
+        apple[i] = 0;
+    }
+
+    while ((c = getchar()) != EOF) {
+        if (c >= '0' && c <= '9') {
+            ++apple[c-'0'];
         }
-        if (c == ' ' || c == '\n' || c == '\t') {
-            state = OUT;
+        else if (c == ' ' || c == '\n' || c == '\t') {
+            ++nwhite;
         }
-        else if (state == OUT) {
-            state = IN;
-            ++nw;
+        else {
+            ++nother;
         }
     }
-    printf("%d %d %d\n", nl, nw, nc);
+
+    printf("digits = ");
+    for (i = 0; i < 10; ++i) {
+        printf("%d", apple[i]);
+    }
+    printf(", white space = %d, other = %d\n", nwhite, nother);
 }
